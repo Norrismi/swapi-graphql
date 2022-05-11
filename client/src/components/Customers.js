@@ -9,7 +9,8 @@ function Customers() {
     const [posts, setPosts] = useState([]);
 
     const fetchPost = async () => {
-        const response = await axios('https://api.chucknorris.io/jokes/random')
+        // const response = await axios('https://api.chucknorris.io/jokes/random')
+        const response = await axios('https://swapi.dev/api/people/1/ ')
         setPosts(response.data)
     }
 
@@ -24,7 +25,7 @@ function Customers() {
             <div>test</div>
             <div>
 
-                {posts.value}
+                {posts}
             </div>
 
 
